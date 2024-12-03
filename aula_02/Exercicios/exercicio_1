@@ -1,0 +1,6 @@
+const leia = require("readline-sync")
+salario = leia.questionFloat("Digite seu salario atual: ")
+abono = leia.questionFloat("Digite seu abono atual: ")
+novoSalario = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(salario + abono)
+console.log(`Este será o seu novo salário é ${novoSalario}`)
+

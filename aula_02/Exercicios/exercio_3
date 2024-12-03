@@ -1,0 +1,8 @@
+const leia = require("readline-sync")
+salarioBruto = leia.questionFloat("Digite seu sálario bruto: ")
+adiciona_notu = leia.questionFloat("Digite o valor do seu adicional noturno: ")
+horasExtras = leia.questionFloat("Digite o valor das suas horas extras:")
+descontos = leia.questionFloat("Digite o valor dos descontos: ")
+
+salarioLiquido = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(salarioBruto + adiciona_notu + (horasExtras * 5) - descontos)
+console.log(`Seu salário líquido será de ${salarioLiquido}`)
