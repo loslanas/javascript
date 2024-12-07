@@ -1,0 +1,1 @@
+console.log ('O tamanho do vetor de Strings é: ', vetorStrings.length)
